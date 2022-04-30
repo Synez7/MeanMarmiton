@@ -1,0 +1,16 @@
+[
+    {"nom":"poulet", "prix":"8","unite":"kilogramme"},
+    {"nom":"cumin", "prix":"15","unite":"kilogramme"},
+    {"nom":"oignon", "prix":"1","unite":"kilogramme"},
+    {"nom":"tomate", "prix":"2.50","unite":"kilogramme"},
+    {"nom":"boeuf", "prix":"22","unite":"kilogramme"},
+    {"nom":"carotte", "prix":"1.50","unite":"kilogramme"},
+    {"nom":"courgette", "prix":"1.50","unite":"kilogramme"},
+    {"nom":"pois chiche", "prix":"1.50","unite":"kilogramme"},
+    {"nom":"sel", "prix":"1.50","unite":"kilogramme"},
+    {"nom":"poivre", "prix":"1.50","unite":"kilogramme"},
+    {"nom":"concentre de tomates", "prix":"1.50","unite":"kilogramme"},
+    {"nom":"beurre", "prix":"1.50","unite":"kilogramme"},
+    {"nom":"huile d'olive", "prix":"1.50","unite":"kilogramme"}
+
+]

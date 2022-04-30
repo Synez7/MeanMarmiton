@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <link rel="stylesheet" href="https://www.markuptag.com/bootstrap/5/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="login-form bg-light mt-5 p-5">
+                    <form action="#" method="POST" class="row g-3">
+                        <h4>Inscription</h4>
+                        <div class="col-12">
+                            <label>Nom</label>
+                            <input #username type="text" name="username" class="form-control" placeholder="Nom">
+                        </div>
+                        
+                        <div class="col-12">
+                            <label>Prénom</label>
+                            <input #firstname type="text" name="firstname" class="form-control" placeholder="Prénom">
+                        </div>
+                        
+                        <div class="col-12">
+                            <label>Email</label>
+                            <input #emailAddress type="email" name="emailAddress" class="form-control" placeholder="Adresse mail">
+                        </div>
+
+                        <div class="col-12">
+                            <label>Pseudo</label>
+                            <input #pseudo type="text" name="pseudo" class="form-control" placeholder="Pseudo">
+                        </div>
+
+                        <div class="col-12">
+                            <label>Mot de passe</label>
+                            <input #password type="password" name="password" class="form-control" placeholder="Mot de passe">
+                        </div>
+
+                     
+                        <div class="col-8">
+                            <button type="submit" class="btn btn-dark float-end" (click)="this.inscription(username.value,firstname.value,emailAddress.value, pseudo.value, password.value)">S'inscrire</button>
+                        </div>
+                    </form>
+                    <hr class="mt-5">
+                    <div class="col-12">
+                        <p class="text-center mb-0"> Déjà un compte ? <a href="#" routerLink="/users/connexion" routerLinkActive="active">Je possède un compte</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form (ngSubmit)="onSubmit()" #inscriptionForm="ngForm">
+	<label> Nom </label>
+    <input type="text" class="form-control" required [(ngModel)]="utilisateur['nom']" name="nom" />
+
+	<label> Prénom </label>
+    <input type="text" class="form-control" required [(ngModel)]="utilisateur['prenom']" name="prenom" />
+
+   	<label> Email </label>
+    <input type="text" class="form-control" required [(ngModel)]="utilisateur['email']" name="email" />
+
+    <label> Pseudo </label>
+    <input type="text" class="form-control" required [(ngModel)]="utilisateur['pseudo']" name="pseudo" />
+
+    <label> Mot de passe </label>
+    <input type="password" class="form-control" required [(ngModel)]="utilisateur['password']" name="password" />
+
+    <input type="submit" value="S'inscrire"/>
+</form>
+<p> {{message}} </p> -->
+
+
+
+
