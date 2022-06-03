@@ -1,0 +1,9 @@
+[
+    {"email":"julie.cert@yahoo.fr", "nom":"Cert", "prenom":"Julie","pseudo":"jucert1" , "password" : "Julie"},
+    {"email":"fred.dupont@yahoo.fr", "nom":"Dupont", "prenom":"Fred","pseudo":"freddup23", "password" : "Fred"},
+    {"email":"paul.lefevre@yahoo.fr", "nom":"Lefevre", "prenom":"Paul","pseudo":"paullef56", "password" : "Paul"},
+    {"email":"john.olson@yahoo.fr", "nom":"Olson", "prenom":"John","pseudo":"johnOls", "password" : "John"},
+    {"email":"keith.hernandez@yahoo.fr", "nom":"Hernandez", "prenom":"Keith","pseudo":"keiHernandez" , "password" : "Keith"},
+    {"email":"michael.mccoy@yahoo.fr", "nom":"Mccoy", "prenom":"Michael","pseudo":"mmcoy", "password" : "Michael"}
+
+]

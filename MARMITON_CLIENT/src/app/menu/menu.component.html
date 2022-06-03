@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link type="text/css" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" routerLink="/"> MARMITON </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    
+    <ul *ngIf="this.userServ.estConnecte() === true" class="navbar-nav mr-auto">
+
+      
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/ingredients">Liste des ingrédients</a>
+      </li>
+     
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/recettes">Liste des recettes</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/recherche">Recherche</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/ajoutRecette">Ajouter une recette</a>
+      </li>
+
+    </ul>
+
+
+    <ul *ngIf="this.userServ.estConnecte() === false" class="navbar-nav mr-auto">
+   
+    </ul>
+
+
+    <div class="btn-group">
+      <a class="btn btn-outline-success active" routerLink="/users/connexion" *ngIf="this.userServ.estConnecte() === false"><i class='fa fa-user'></i>  Se connecter / S'inscrire</a>
+      <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false" *ngIf="this.userServ.estConnecte() === true">
+        <i class="fa fa-user-circle" aria-hidden="true"></i> {{this.userServ.getUserAuthenticated()['pseudo']}}
+      </button>
+      <div class="dropdown-menu dropdown-menu-right"  *ngIf="this.userServ.estConnecte() === true">
+        <button class="dropdown-item" (click)="this.userServ.deconnexion()"><i class="fa fa-sign-out" aria-hidden="true"></i> Se déconnecter</button>
+      </div>
+    </div>
+ 
+
+    </div>
+</nav>
+</body>
+</html>
+
+
+
+
+    
+    
