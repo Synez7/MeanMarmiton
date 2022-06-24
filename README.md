@@ -7,14 +7,14 @@ Ce projet est constitué de trois repertoires dont l'un regroupe la partie Front
 
 <ins>Informations côté Serveur :</ins>
 
-Dans le repertoire **MARMITON_SERVEUR/**, vous retrouverez un script bash intitulé *script.sh* qui permet de créer toutes les collections nécessaires pour notre base de données.
+Dans le repertoire **MARMITON_SERVEUR/**, vous retrouverez un script bash intitulé <ins>script.sh</ins> qui permet de créer toutes les collections nécessaires pour notre base de données.
 En somme, ce script bash vous permettra dans le même temps d'executer le serveur Node sur le port 8888.
 
 
 
 ## Guide de lancement
 
-Pour vous faciliter la tâche, un script bash nommé *run.sh* va vous permettre d'ouvrir deux fenêtres de terminal dont l'une verra le serveur Node s'executer et l'autre le projet Angular. Il gère même l'installation de toutes les dépendances nécessaires afin que le serveur Node et le projet Angular puissent se lancer sans le moindre souci.
+Pour vous faciliter la tâche, un script bash nommé <ins>run.sh</ins> va vous permettre d'ouvrir deux fenêtres de terminal dont l'une verra le serveur Node s'executer et l'autre le projet Angular. Il gère même l'installation de toutes les dépendances nécessaires afin que le serveur Node et le projet Angular puissent se lancer sans le moindre souci.
 En vous plaçant dans le répertoire **ProjetMean_MARMITON/**, ouvrez un terminal et executez les commandes ci-dessous :
 
 ```sh
